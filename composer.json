@@ -1,5 +1,5 @@
 {
-    "name": "codeguy/upload",
+    "name": "scoumbourdis/upload",
     "type": "library",
     "description": "Handle file uploads with extensible validation and storage strategies",
     "keywords": ["upload", "validation", "file"],
@@ -10,10 +10,19 @@
             "name": "Josh Lockhart",
             "email": "info@joshlockhart.com",
             "homepage": "https://github.com/codeguy/"
+        },
+        {
+            "name": "Brandon Savage",
+            "email": "brandon@brandonsavage.net",
+            "homepage": "https://www.brandonsavage.net/"
+        },
+        {
+            "name": "John Skoumbourdis",
+            "homepage": "https://www.web-and-development.com/"
         }
     ],
     "require": {
-        "php": ">=5.3.0",
+        "php": "^7.3|^8.0",
         "ext-fileinfo": "*"
     },
     "require-dev": {

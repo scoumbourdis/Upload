@@ -175,7 +175,7 @@ class File extends \SplFileInfo
      * Get file name with extension
      * @return string
      */
-    public function getNameWithExtension()
+    public function getNameWithExtension() : string
     {
         return sprintf('%s.%s', $this->getName(), $this->getExtension());
     }
@@ -184,7 +184,7 @@ class File extends \SplFileInfo
      * Get file extension (without leading dot)
      * @return string
      */
-    public function getExtension()
+    public function getExtension() : string
     {
         if (!isset($this->extension)) {
             $this->extension = strtolower(pathinfo($this->originalName, PATHINFO_EXTENSION));
@@ -344,7 +344,7 @@ class File extends \SplFileInfo
      *
      * @return  bool
      */
-    public function isUploadedFile()
+    public function isUploadedFile() : bool
     {
         return is_uploaded_file($this->getPathname());
     }
